@@ -1,0 +1,21 @@
+#  VinaScript.txt
+#  
+#
+#  Created by Dylan Schick on 6/12/17.
+#
+
+receptor = /Users/dylanschick/Desktop/Tutorial/Test/hepi_2h1h.pdbqt  # 1. Change recdir to path of receptor and rec.pdbqt to the name of your pdbqt file
+ligand = /Users/dylanschick/Desktop/Tutorial/Test/1a.pdbqt  # 2. Change ligdir to path of ligand and lig.pdbqt to the name of your pdbqt file
+
+center_x = 44.2  #3. Change number after center_x, center_y, center_z to coordinates of center of grid box
+center_y = 9.9 
+center_z = 4.2 
+
+size_x = 56  #4. Change number after size_x, size_y, size_z to respective sizes of grid box
+size_y = 58 
+size_z = 52 
+
+out = /Users/dylanschick/Desktop/Tutorial/Test/1a_hepi_2h1h.pdbqt  # 5. Change outdir to directory where you want output file and change lig_rec to whatever you want
+log = /Users/dylanschick/Desktop/Tutorial/Test/results.txt  #6. Change number of CPUs to however many on your system you'd like to dedicate. Usually, set this number to between 2-5.
+num_modes = 20  #7. Change to however number of conformations you want ligand to bind to receptor. Max is 20 on Autodock Vina.
+exhaustiveness = 8 #8. Generally leave this number at around 8. A larger exhaustiveness should accompany a larger grid box.
